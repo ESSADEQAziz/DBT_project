@@ -1,0 +1,28 @@
+
+version: 2
+
+models:
+  - name: test_model
+    description: "A simple description of a model"
+    columns:
+      - name: cus_id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+#         - string_not_empthy   
+
+
+
+  - name: model_1
+    description: '{{ doc("table_events") }}'
+
+    columns:
+      - name: pro_code
+        description: An identifier for the model
+   
+
+
+
+
+
